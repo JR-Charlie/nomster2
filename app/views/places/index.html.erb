@@ -6,4 +6,6 @@
   </div>
 <% end %>
 
-<%= will_paginate @posts, :renderer =>WillPaginate::ActionView::BootstrapLinkRenderer %>
+<div class="pagenav">
+  <%= will_paginate @posts, :renderer =>WillPaginate::ActionView::BootstrapLinkRenderer %> &nbsp &nbsp
+</div>
