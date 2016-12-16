@@ -56,3 +56,15 @@
     <%= f.submit "Add a Comment", class: 'btn btn-primary' %>
   <% end %>
 </div>
+<div class = "booyah-box col-xs-10 offset-xs-1">
+<h1>Comments</h1>
+
+<% @place.comments.each do |comment| %>
+  <div>
+  <blockquote>
+    <b><%= comment.rating %> Stars</b> -
+      <%= comment.message %>
+    <small><%= comment.user.email %></small>
+  </blockquote>
+  </div>
+<% end %>
