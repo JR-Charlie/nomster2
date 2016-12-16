@@ -48,3 +48,11 @@
     <% end %>
   </div>
 </div>
+<div class="clear"></div>
+<div class= "booyah-box col-xs-10 offset-xs-1">
+  <%= simple_form_for @comment, url: '#' do |f| %>
+    <%= f.input :message %>
+    <%= f.input :rating %>
+    <%= f.submit "Add a Comment", class: 'btn btn-primary' %>
+  <% end %>
+</div>
