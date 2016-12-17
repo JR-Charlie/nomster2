@@ -8,6 +8,15 @@
       <small><%= place.user.email %></small>
     <% end %>
 
+    
+      <div class="col-xs-12">
+          <% if place.photos.last.present? %>
+            <%= image_tag place.photos.last.picture%>
+            <small><%= place.photos.last.caption %></small>
+          <% end %>
+        </div>
+  
+
     <% if place.comments.present? %>
       <div class="col-xs-12">
         <blockquote>
