@@ -67,6 +67,17 @@ blockquote p {
   clear: both;
 }
 
+.container {
+    width: 600px;
+    height: auto;
+}
+
+/* resize images */
+.container img {
+    width: 100%;
+    height: auto;
+}
+
 #map {
   height: 300px;
 }
